@@ -10,6 +10,12 @@
 
 body {
   margin: 0;
+  color: var(--themes-main-color);
+  background-color: var(--themes-background);
+  font-family: var(--fonts-main);
+  font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
+  font-weight: 400;
 }
 
 h1,
@@ -35,6 +41,17 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
+}
+
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
 }
 
 ul,

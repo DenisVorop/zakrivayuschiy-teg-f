@@ -1,1 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --themes-main-color: #00cc14;
+  --themes-background: #000000;
+
+  --heart-core: #000000;
+  --heart-main-body: #000000;
+  --heart-contour: #00cc14;
+  --heart-sparks: #ff0000;
+
+  --fonts-main: "Inter";
+  --fonts-accent: "Press Start 2P";
+
+  --font-size-small: 14px;
+  --font-size-main: 18px;
+
+  --line-height-main: 21px;
+
+  --adaptive-gap: 25px;
+
+  --transition: all 0.3s ease 0s;
+
+  --repeating-gradient-color: #000000;
+  --from-gradient-color: #007f0c;
+  --to-gradient-color: #004306;
+}
