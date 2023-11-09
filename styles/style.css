@@ -19,6 +19,7 @@
   min-block-size: 100dvb;
   max-width: 696px;
   margin: 0 auto;
+  background-attachment: fixed;
   background-image: repeating-linear-gradient(
       90deg,
       var(--repeating-gradient-color) 0 2px,
@@ -100,6 +101,7 @@
   font-family: var(--fonts-main);
   font-variation-settings: "wght" 785;
   line-height: normal;
+  font-size: var(--font-size-main);
 }
 
 .title {
@@ -244,11 +246,10 @@
 
 .card__label {
   padding: 5px 10px 4px;
+  border-bottom: 2px solid var(--themes-main-color);
 }
 
 .card__image {
-  border-top: 2px solid var(--themes-main-color);
-  border-bottom: 2px solid var(--themes-main-color);
   position: relative;
 }
 
@@ -259,6 +260,7 @@
   padding: var(--adaptive-gap);
   font-style: normal;
   font-variation-settings: "wght" 465;
+  border-top: 2px solid var(--themes-main-color);
 }
 
 .card__tag {
@@ -293,6 +295,8 @@
   justify-content: end;
   align-items: center;
   gap: 6px;
+  padding: var(--adaptive-gap);
+  padding-top: 0;
 }
 
 .card__icon-button {
@@ -329,6 +333,8 @@
 .footer__button .floppy {
   transform: scale(1.3);
   z-index: 2;
+  width: 27px;
+  height: 27px;
 }
 
 .footer__button:hover .floppy path {
