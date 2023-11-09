@@ -20,16 +20,20 @@
   max-width: 696px;
   margin: 0 auto;
   background-image: repeating-linear-gradient(
-      0deg,
-      var(--repeating-gradient-color),
-      transparent 2px
+      90deg,
+      var(--repeating-gradient-color) 0 2px,
+      transparent 2px 4px
     ),
     repeating-linear-gradient(
-      90deg,
-      var(--repeating-gradient-color),
-      transparent 2px
+      180deg,
+      var(--repeating-gradient-color) 0 2px,
+      transparent 2px 4px
     ),
-    linear-gradient(var(--from-gradient-color), var(--to-gradient-color));
+    linear-gradient(
+      180deg,
+      var(--from-gradient-color) 0%,
+      var(--to-gradient-color) 100%
+    );
 }
 
 .button {
@@ -66,6 +70,11 @@
 }
 
 .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   max-height: 371px;
 }
 
@@ -117,14 +126,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--adaptive-gap);
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
 /*  */
@@ -287,16 +288,11 @@ img {
   }
 }
 
-.card__content p:first-of-type {
-  line-height: 119%;
-}
-
 .card__like {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 6px;
-  margin-top: -1.85px;
 }
 
 .card__icon-button {
@@ -310,6 +306,10 @@ img {
   font-size: var(--font-size-small);
   line-height: 90%;
   z-index: 2;
+}
+
+.button__text::first-letter {
+  text-transform: capitalize;
 }
 
 .footer {
@@ -339,6 +339,11 @@ img {
 .main-body,
 .sparks {
   opacity: 0;
+}
+
+.like-icon__heart {
+  width: 37px;
+  height: 34px;
 }
 
 .like-icon:focus {
@@ -413,6 +418,11 @@ img {
   gap: 20px 30px;
 }
 
+.dialog__content .floppy-dialog {
+  width: 40px;
+  height: 40px;
+}
+
 .dialog__text {
   font-family: var(--fonts-accent);
   font-size: var(--font-size-small);
@@ -432,10 +442,6 @@ img {
     padding-top: 136px;
   }
 
-  .card__content p:first-of-type {
-    width: 100%;
-  }
-
   .footer__button {
     max-width: 335px;
     padding-left: 0;
@@ -449,6 +455,8 @@ img {
   }
 
   .footer__button .floppy {
+    width: 21px;
+    height: 21px;
     transform: scale(1);
   }
 
